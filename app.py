@@ -6,11 +6,11 @@ from datetime import datetime
 from seleniumbase import SB
 
 # 环境变量配置(可以直接私库在双引号里填写)
-EMAIL         = os.environ.get("EMAIL") or "xxxxx@gmail.com"   # 邮箱,只用于通知使用，可随意填写
-SESSION_TOKEN = os.environ.get("SESSION_TOKEN") or ""          # session token，必须填写
-GH_TOKEN      = os.environ.get("GH_TOKEN") or ""               # GitHub PAT token,用于自动更新session token,必须填写
-TG_CHAT_ID    = os.environ.get("TG_CHAT_ID") or ""             # TG chat id,不填写不通知，需和bot token一起填写生效
-TG_BOT_TOKEN  = os.environ.get("TG_BOT_TOKEN") or ""           # TG bot token 
+EMAIL         = os.environ.get("EMAIL") or "champiroo@gmail.com"   # 邮箱,只用于通知使用，可随意填写
+SESSION_TOKEN = os.environ.get("SESSION_TOKEN") or "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm92aWRlciI6ImRpc2NvcmQiLCJhY2Nlc3NfdG9rZW4iOiJPRGcwTXpneU5ESXlOVE13TVRVNE5qSXouaWdyU0lEendsd3FvQ3pacVRoUm9ROVpvbGI3U2xnIiwiaWF0IjoxNzgzMTg5MDMxLCJleHAiOjE3ODM3OTM4MzF9.SGylbIgQw3FpVS81NpKrEhi28CzhvPyXReEUr-t0AdA"          # session token，必须填写
+GH_TOKEN      = os.environ.get("GH_TOKEN") or "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"               # GitHub PAT token,用于自动更新session token,必须填写
+TG_CHAT_ID    = os.environ.get("TG_CHAT_ID") or "5730060482"             # TG chat id,不填写不通知，需和bot token一起填写生效
+TG_BOT_TOKEN  = os.environ.get("TG_BOT_TOKEN") or "8754140975:AAER-GEQPdjj4z4EZqkk4ZgB_4z23la7qf4"           # TG bot token 
 
 if not SESSION_TOKEN :
     print("ℹ️ 未配置 SESSION_TOKEN,脚本终止。")
